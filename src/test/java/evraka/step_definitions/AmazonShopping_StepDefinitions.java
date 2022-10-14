@@ -10,7 +10,7 @@ import org.openqa.selenium.Keys;
 
 public class AmazonShopping_StepDefinitions {
 
-    AmazonPage amazonPage = new AmazonPage();
+    static AmazonPage amazonPage = new AmazonPage();
     @When("Go to url")
     public void go_to() {
         Driver.getDriver().get("https://www.amazon.com");
