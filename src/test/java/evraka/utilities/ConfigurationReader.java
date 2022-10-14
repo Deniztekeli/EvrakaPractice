@@ -9,6 +9,7 @@ public class ConfigurationReader {
     private static Properties properties = new Properties();
 
     static {
+
         try {
             FileInputStream file = new FileInputStream("configuration.properties");
 
