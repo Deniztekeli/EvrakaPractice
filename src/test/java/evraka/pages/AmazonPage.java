@@ -17,13 +17,17 @@ public class AmazonPage {
     @FindBy(xpath = "//span[.='RESULTS']")
     public WebElement resultsList;
 
-    @FindBy(xpath = "//span[.='Apple iPhone 12 Pro Max, 512GB, Pacific Blue - Unlocked (Renewed Premium)']")
+
+    @FindBy(xpath = "//span[contains(text(),'Apple iPhone 12, 256GB,')]")
     public WebElement atTheTopIphone12;
 
-    @FindBy(xpath = "(//span[@class='selection'])[2]")
+    //@FindBy(xpath = "(//img)[2]")
+    //@FindBy(xpath = "//span[contains(text(),'Apple iPhone 12 Pro, 512GB')]")
+
+    @FindBy(xpath = "//th[text()=' Colour ']/following-sibling::td[1]")
     public WebElement color;
 
-    @FindBy(xpath = "(//span[@class='selection'])[3]")
+    @FindBy(xpath = "(//td[@class='a-span9'])[6]/span")
     public WebElement memoryStorageCapacity;
 
     @FindBy(css = "div[id=availability]>span")
